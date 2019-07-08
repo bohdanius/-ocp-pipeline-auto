@@ -13,6 +13,8 @@ public class AnswerApiTest {
     public void setup() {
         RestAssured.baseURI = System.getProperty("server.host", DEFAULT_URI);
         RestAssured.port = Integer.valueOf(System.getProperty("server.port", "8080"));
+        System.out.println("baseURI: "+ baseURI);
+        System.out.println("port: "+ port);
     }
 
     @Test
